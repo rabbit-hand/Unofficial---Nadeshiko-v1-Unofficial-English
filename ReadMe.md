@@ -6,6 +6,32 @@
  - 【公式WEB 】https://nadesi.com/ または https://なでしこ.jp
  - 【対応  OS】Windows 10/11
 
+---
+
+## 🌍 English Version Available
+
+**非公式英語版**が利用可能です！
+
+### 📁 English Repository
+**https://github.com/rabbit-hand/Unofficial---Nadeshiko-v1-Unofficial-English.git**
+
+### ✨ English Version Features
+- **完全な英語対応** - 自然な英語でプログラミング可能
+- **日本語版との互換性** - すべての機能がそのまま利用可能
+- **英語エラーメッセージ** - 開発者向けの分かりやすい表示
+- **国際化対応** - Unicode対応で多言語サポート
+
+### 🚀 English Example
+```nadesiko
+SAY "Hello, English Nadesiko!"
+VAR X IS 10
+IF X > 5 THEN
+  SAY "X is greater than 5"
+END
+```
+
+**英語版なでしこで、英語圏の開発者も自然言語プログラミングを楽しめます！**
+
 # 概要
 
 日本語プログラミング言語「なでしこ」とは、日本語でプログラムを作ることが出来るプログラミング言語です。なでしこは以下の３点に特化した言語です。
