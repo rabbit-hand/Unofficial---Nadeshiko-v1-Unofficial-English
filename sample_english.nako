@@ -1,0 +1,82 @@
+# Nadesiko English Sample Program
+# This demonstrates the translated English functions
+
+# Basic I/O
+SAY "Hello, World!"
+SAY "Welcome to Nadesiko English Edition"
+
+# Variable declarations
+VAR X IS 10
+VAR Y IS 20
+VAR RESULT
+
+# Arithmetic operations
+ASSIGN 5 to X
+ADD 3 to X
+RESULT = X + Y
+SAY "Result: {RESULT}"
+
+# Comparison and conditional logic
+IF X > Y THEN
+  SAY "X is greater than Y"
+ELSE
+  SAY "X is not greater than Y"
+END
+
+# Loop examples
+SAY "Counting with FOR loop:"
+FOR COUNT from 1 to 5
+  SAY "Count: {COUNT}"
+END
+
+SAY "Counting with WHILE loop:"
+VAR I IS 1
+WHILE I <= 3
+  SAY "While count: {I}"
+  ADD_DIRECT 1 to I
+END
+
+# Mathematical functions
+VAR ANGLE IS 1.57  # Approximately 90 degrees in radians
+VAR SIN_VAL = SIN(ANGLE)
+VAR COS_VAL = COS(ANGLE)
+SAY "Sin({ANGLE}) = {SIN_VAL}"
+SAY "Cos({ANGLE}) = {COS_VAL}"
+
+# Type conversions
+VAR NUM_STR = TOSTR(42)
+VAR STR_NUM = TOINT("123")
+SAY "String conversion: {NUM_STR}"
+SAY "Number conversion: {STR_NUM}"
+
+# Array and hash operations
+VAR MY_ARRAY = [1, 2, 3, 4, 5]
+SAY "Array length: {ARRAY_COUNT(MY_ARRAY)}"
+
+VAR MY_HASH = TOHASH({"name": "Nadesiko", "version": "2.0"})
+SAY "Hash keys: {HASH_KEYS(MY_HASH)}"
+
+# Error handling
+ERROR_MESSAGE = ""
+TRY
+  # This would cause an error
+  RESULT = 10 / 0
+EXCEPT
+  SAY "Error caught: {ERROR_MESSAGE}"
+END
+
+# System information
+SAY "System time: {SYSTIME}"
+SAY "Command line: {COMMAND_LINE}"
+
+# Functions
+FUNCTION CALCULATE_SUM(A, B)
+  RETURN A + B
+END
+
+VAR SUM_RESULT = CALCULATE_SUM(15, 25)
+SAY "Function result: {SUM_RESULT}"
+
+# End program
+SAY "Program completed successfully!"
+END

@@ -1,0 +1,44 @@
+# Basic English Nadesiko Test
+# Test fundamental English syntax
+
+# Basic I/O
+SAY "Hello from English Nadesiko!"
+
+# Variable declaration and assignment
+VAR X IS 10
+VAR Y IS 20
+VAR RESULT
+
+# Arithmetic operations
+RESULT = X + Y
+SAY "X + Y = {RESULT}"
+
+RESULT = X * Y
+SAY "X * Y = {RESULT}"
+
+# Conditional logic
+IF X > Y THEN
+  SAY "X is greater than Y"
+ELSE
+  SAY "Y is greater than X"
+END
+
+# Loop test
+SAY "Counting:"
+VAR I IS 1
+WHILE I <= 5
+  SAY "Count: {I}"
+  I = I + 1
+END
+
+# Mathematical functions
+VAR ANGLE IS 1.57
+VAR SIN_VAL = SIN(ANGLE)
+SAY "Sin(1.57) = {SIN_VAL}"
+
+# Type conversion
+VAR NUM_STR = TOSTR(42)
+SAY "42 as string: {NUM_STR}"
+
+# End program
+SAY "Test completed successfully!"
