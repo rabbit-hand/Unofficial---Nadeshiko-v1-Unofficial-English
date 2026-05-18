@@ -1,82 +1,50 @@
-# Nadesiko English Sample Program
-# This demonstrates the translated English functions
+# Nadesiko English Sample Program (Frictionless Edition)
+# Verified under the new lowercase, quote-free, and koko-block architecture.
 
-# Basic I/O
-SAY "Hello, World!"
-SAY "Welcome to Nadesiko English Edition"
+# Basic I/O (No quotes required via bracket syntax)
+say [Hello, World!]
+say [Welcome to Nadesiko English Edition]
 
-# Variable declarations
-VAR X IS 10
-VAR Y IS 20
-VAR RESULT
+# Variable declarations & operations (Pure lowercase flow)
+var x is 10
+var y is 20
+var result
 
-# Arithmetic operations
-ASSIGN 5 to X
-ADD 3 to X
-RESULT = X + Y
-SAY "Result: {RESULT}"
+x = 5
+x = x + 3
+result = x + y
+say [Result: {result}]
 
-# Comparison and conditional logic
-IF X > Y THEN
-  SAY "X is greater than Y"
-ELSE
-  SAY "X is not greater than Y"
-END
+# Comparison and conditional logic (Using lowercase then and koko)
+if x > y then
+  say [X is greater than Y]
+else
+  say [X is not greater than Y]
+koko
 
-# Loop examples
-SAY "Counting with FOR loop:"
-FOR COUNT from 1 to 5
-  SAY "Count: {COUNT}"
-END
+# Loop examples (Using the new lowercase flow and koko)
+say [Counting with FOR loop:]
+for count from 1 to 5
+  say [Count: {count}]
+koko
 
-SAY "Counting with WHILE loop:"
-VAR I IS 1
-WHILE I <= 3
-  SAY "While count: {I}"
-  ADD_DIRECT 1 to I
-END
-
-# Mathematical functions
-VAR ANGLE IS 1.57  # Approximately 90 degrees in radians
-VAR SIN_VAL = SIN(ANGLE)
-VAR COS_VAL = COS(ANGLE)
-SAY "Sin({ANGLE}) = {SIN_VAL}"
-SAY "Cos({ANGLE}) = {COS_VAL}"
-
-# Type conversions
-VAR NUM_STR = TOSTR(42)
-VAR STR_NUM = TOINT("123")
-SAY "String conversion: {NUM_STR}"
-SAY "Number conversion: {STR_NUM}"
-
-# Array and hash operations
-VAR MY_ARRAY = [1, 2, 3, 4, 5]
-SAY "Array length: {ARRAY_COUNT(MY_ARRAY)}"
-
-VAR MY_HASH = TOHASH({"name": "Nadesiko", "version": "2.0"})
-SAY "Hash keys: {HASH_KEYS(MY_HASH)}"
-
-# Error handling
-ERROR_MESSAGE = ""
-TRY
-  # This would cause an error
-  RESULT = 10 / 0
-EXCEPT
-  SAY "Error caught: {ERROR_MESSAGE}"
-END
+say [Counting with WHILE loop:]
+var i is 1
+while i <= 3
+  say [While count: {i}]
+  i = i + 1
+koko
 
 # System information
-SAY "System time: {SYSTIME}"
-SAY "Command line: {COMMAND_LINE}"
+say [System time: {SYSTIME}]
 
-# Functions
-FUNCTION CALCULATE_SUM(A, B)
-  RETURN A + B
-END
+# Functions (Using custom lowercase closure)
+function calculate_sum(a, b)
+  return a + b
+koko
 
-VAR SUM_RESULT = CALCULATE_SUM(15, 25)
-SAY "Function result: {SUM_RESULT}"
+var sum_result = calculate_sum(15, 25)
+say [Function result: {sum_result}]
 
 # End program
-SAY "Program completed successfully!"
-END
+say [Program completed successfully!]
