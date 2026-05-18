@@ -21,3 +21,11 @@ VAR X IS 10
 IF X > 5 THEN
   SAY "X is greater than 5"
 END
+
+# Effortless typing: No Shift key, no double quotes
+say [Hello, English Nadesiko!]
+var x is 10
+
+if x > 5 then
+  say [X is greater than 5]
+end
