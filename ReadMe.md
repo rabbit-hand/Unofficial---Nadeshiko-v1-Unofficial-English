@@ -12,17 +12,11 @@ An unofficial English branch of the Japanese natural-language programming langua
 
 ---
 
-## 💻 Code Example Comparison
+## 💻 Code Example
 
-### Old Rigid Syntax (With Typing Friction)
+> Your newly optimized setup allows smooth, lowercase typing and instant string parsing via bracket encapsulation.
 ```nadesiko
-SAY "Hello, English Nadesiko!"
-VAR X IS 10
-IF X > 5 THEN
-  SAY "X is greater than 5"
-END
-
-# Effortless typing: No Shift key, no double quotes
+# Effortless typing: No Shift key, no double quotes required
 say [Hello, English Nadesiko!]
 var x is 10
 
