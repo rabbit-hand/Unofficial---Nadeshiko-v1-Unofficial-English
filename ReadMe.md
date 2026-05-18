@@ -8,18 +8,19 @@ An unofficial English branch of the Japanese natural-language programming langua
 
 * **No Case Constraints:** Keywords like `say` and `var` are automatically evaluated case-insensitively. You no longer need to hold down the `Shift` key to type in strict uppercase.
 * **No Quote Friction (`[]` Syntax):** Double quotes `""` have been completely stripped away. Everything encapsulated within brackets `[]` is automatically parsed directly as a raw string literal.
+* **`koko` Block End:** The rigid `END` keyword has been replaced with a casual, lowercase `koko` to mark the end of execution blocks smoothly.
 * **Pure English Environment:** Both the internal compiler comments and external documentation have been completely rebuilt in clean English.
 
 ---
 
 ## 💻 Code Example
 
-> Your newly optimized setup allows smooth, lowercase typing and instant string parsing via bracket encapsulation.
+> Your newly optimized setup allows smooth, lowercase typing, instant string parsing via brackets, and a lightweight block closer.
 ```nadesiko
-# Effortless typing: No Shift key, no double quotes required
+# Effortless typing: No Shift key, no double quotes, and clean closing
 say [Hello, English Nadesiko!]
 var x is 10
 
 if x > 5 then
   say [X is greater than 5]
-end
+koko
